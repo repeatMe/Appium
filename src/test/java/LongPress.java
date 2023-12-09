@@ -20,7 +20,7 @@ public class LongPress extends BaseTest {
 		driver.findElement(AppiumBy.accessibilityId("1. Custom Adapter")).click();
 	    WebElement ele=driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
 		
-	    longPressAction()
+	   // longPressAction()
 		String text=driver.findElement(By.id("android:id/title")).getText();
 		Assert.assertTrue(driver.findElement(By.id("android:id/title")).isDisplayed()); 
 		assertEquals(text, "Sample Menu");
